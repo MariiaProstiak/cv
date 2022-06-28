@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Mariia CV</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/examples/libs/bootstrap-5/bootstrap.min.css">
+        <!-- Bootstrap JS -->
+        <script defer src="/examples/libs/bootstrap-5/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="styles.css">
+        <script src="myscripts.js"></script> 
     </head>
     <body>
         <div class="container">
@@ -11,6 +16,13 @@
                 <img  class="avatar" src="photo.jpg" width="200" alt="Loading....">
                 <div class="info-text">
                     <h1>Mariia Prostiak</h1>
+                    <div class="position">
+                        <!-- <input type="button" value="Download CV en PDF" onclick="DownloadFile('CV_PROSTIAK_Mariia.pdf')" /> 
+                        <form method="get" action="CV_PROSTIAK_Mariia.pdf">
+                            <button type="submit">Download!</button>
+                        </form>-->
+                        <a href="CV_PROSTIAK_Mariia.pdf" download="CV_PROSTIAK_Mariia.pdf" class="btn btn-success">Download CV en PDF</a>
+                    </div>
                         <p>2 diplômes Bac +5 : en <strong>Informatique et en Mathématiques Appliquées</strong>.</p>
                         <p>3 ans d’expérience professionnelle à de nombreux projets : construсtion des applications métiers, l'automatisation du traitement des données structurées et non structurées, implémentation de processus automatisés, développement de l’API Rest API et API oData, support et maintenance des clients, développement d'un plug-in pour l'intégration avec le système de signature électronique "Let's sign", développement d'API pour le système de trading. Enormément impliqué dans la réussite des projets.</p>
                         <p>Le rêve est devenir un expert en développement logiciel.</p>
@@ -160,29 +172,25 @@
             </div>
             <div class="contact">
                 <h2>Contactez moi</h2>
-                <form action="/">
+                <form method="post" action="send.php">
                     <div class="row">
                         <div class="form-group">
                             <label for="name">Votre nom et prénom: </label>
-                            <input type="text" id ="name" placeholder="Saisissez votre nom et prénom">
+                            <input type="text" id ="name" placeholder="Saisissez votre nom et prénom" name="name" required>
                         </div>
                         <div class="form-group">   
                             <label for="email">Votre email: </label>
-                            <input type="text" id ="email" placeholder="Saisissez votre email">
+                            <input type="text" id ="email" placeholder="Saisissez votre email" name="email" required>
                         </div>
                     </div>
                     <div class="form-group">     
                         <label for="text">Votre message: </label>
-                        <textarea id ="text" rows="2" cols="15"></textarea>
+                        <textarea id ="text" rows="2" cols="15" name="message" required></textarea>
                     </div>    
                     <input class="btn" type="submit" value="Contacter">
-                   
                 </form>
-                <div class="position">
-                    <div class="box"></div>
-                </div>
             </div>
          </div>
-         
     </body>
 </html>
+
