@@ -1,196 +1,262 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Mariia CV</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="/examples/libs/bootstrap-5/bootstrap.min.css">
-        <!-- Bootstrap JS -->
-        <script defer src="/examples/libs/bootstrap-5/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="styles.css">
-        <script src="myscripts.js"></script> 
-    </head>
-    <body>
-        <div class="container">
-            <div class="info">
-                <img  class="avatar" src="photo.png" width="200" alt="Loading....">
-                <div class="info-text">
-                    <h1>Mariia Prostiak</h1>
-                    <div class="position">
-                        <!-- <input type="button" value="Download CV en PDF" onclick="DownloadFile('CV_PROSTIAK_Mariia.pdf')" /> 
-                        <form method="get" action="CV_PROSTIAK_Mariia.pdf">
-                            <button type="submit">Download!</button>
-                        </form>-->
-                        <a href="CV_PROSTIAK_Mariia.pdf" download="CV_PROSTIAK_Mariia.pdf" class="btn btn-success">Download CV en PDF</a>
-                    </div>
-                        <p>2 diplômes Bac +5 : en <strong>Informatique et en Mathématiques Appliquées</strong>.</p>
-                        <p>3 ans d’expérience professionnelle à de nombreux projets : construсtion des applications métiers, l'automatisation du traitement des données structurées et non structurées, implémentation de processus automatisés, développement de l’API Rest API et API oData, support et maintenance des clients, développement d'un plug-in pour l'intégration avec le système de signature électronique "Let's sign", développement d'API pour le système de trading. Enormément impliqué dans la réussite des projets.</p>
-                        <p>Le rêve est devenir un expert en développement logiciel.</p>
-                        <p>La motivation - un travail d'équipe qui donne le sentiment d'être utile à l'édification de la société numérique de demain.( équipe dynamique offrant des opportunités d’évolution.)</p></>
-                </div>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/svg+xml" href="./img/logoIcon.svg" />
+   <link rel="stylesheet" href="./css/style.css" />
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!-- swiper css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <title>Mariia | Portfolio</title>
+</head>
+
+<body>
+   <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+      <nav class="navbar">
+         <a href="#home" class="active">Home</a>
+         <a href="#about">About</a>
+         <!-- <a href="#services">Services</a> -->
+         <a href="#portfolio">Portfolio</a>
+         <a href="#contact">Contact</a>
+      </nav>
+      <div class="bx bx-moon" id="darkMode-icon"></div>
+      <div class="bx bx-menu" id="menu-icon"></div>
+   </header>
+
+   <section class="home" id="home">
+      <div class="home-content">
+         <h3>Hello, I am</h3>
+         <h1>Mariia Prostiak</h1>
+         <p>Development for me is both a job and a hobby, so even after hours I do it.</p>
+         <p>My goal: to become an expert in front-end development.</p>
+         <div class="social-media">
+            <a href="https://www.facebook.com/masha.pros" target="_blank"><i class='bx bxl-facebook'></i></a>
+            <!-- <a href="#"><i class='bx bxl-instagram'></i></a> -->
+            <a href="https://www.linkedin.com/in/mariia-prostiak/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/MariiaProstiak" target="_blank"><i class='bx bxl-github'></i></a>
+         </div>
+         <a href="CV_PROSTIAK_Mariia.pdf" download="CV_PROSTIAK_Mariia.pdf" class='btn'>Download CV</a>
+      </div>
+
+      <div class="profession-container">
+         <div class="profession-box">
+            <div class="profession" style="--i:0;">
+               <i class='bx bx-code-alt'></i>
+               <h3>Front-end<br>developer</h3>
             </div>
-                        
-            <hr>
-            <h1 id ="post" style="text-align: center;">Ingénieur développement logiciel</h1>
-            <hr>
-            <div class="social">
-                <h2>Mes contacts</h2>
-                    Adresse : 29, avenue du Général de Gaulle, apt 68, 72000 Le Mans, FRANCE <br>
-                    Téléphone: 07.67.28.28.35 <br>
-                    Email: mprostya@gmail.com <br>
-                    <a href="https://fr.linkedin.com/in/mariia-prostiak-25900615a" target="_blank">LinkedIn</a>
-                    |
-                    <a href="https://www.instagram.com/mariia_prostiak/" target="_blank">Instagram</a>
-                    <!-- <li><a href="youtube.html">Video</a></li> -->
-                </ul>
+            <div class="profession" style="--i:1;">
+               <i class='bx bxl-visual-studio'></i>
+               <h3>Back-end<br>developer</h3>
             </div>
-        
-            <div class="card bg-yellow">
-                <h2>Principales competences techniques</h2>
-                <table class="table">
-                    <tr>
-                        <td>Système</td>
-                        <td>Windows, Linux (débutant)</td>
-                    </tr>
-                    <tr>
-                        <td>Conception</td>
-                        <td>UML</td>
-                    </tr>
-                    <tr>
-                        <td>SGBD</td>
-                        <td>Hadoop, Spark, Mongo DB</td>
-                    </tr>
-                    <tr>
-                        <td>Langages</td>
-                        <td>C#, Javascript, C++, C, Java, HTML/CSS, XML, Python, Prolog, VB Script, VBA, Scala, SQL, PHP</td>
-                    </tr>
-                    <tr>
-                        <td>Base de données</td>
-                        <td>MySQL, MS SQL, Maria DB, Access</td>
-                    </tr>
-                    <tr>
-                        <td>Administration serveur</td>
-                        <td>IIS, Gestionnaire du serveur, MS SQL Server Management Studio</td>
-                    </tr>
-                    <tr>
-                        <td>Méthode</td>
-                        <td>Agile</td>
-                    </tr>
-                    <tr>
-                        <td>Outils / Logiciels</td>
-                        <td>Git, Visual Studio, Power Apps, Eclipse, Android Studio, Jupyter-Notebook, PyCharm, Photoshop, Illustrator, 3D Max, Flash</td>
-                    </tr>
-                    <tr>
-                        <td>CRM / SaaS</td>
-                        <td>Creatio, 2OS, Dolibarr</td>
-                    </tr>
-                    <tr>
-                        <td>Documentation</td>
-                        <td>Swagger, Confluence Atlassian</td>
-                    </tr>
-                    <tr>
-                        <td>Divers</td>
-                        <td>REST, Tensorflow, .NET, MVC, Dashboard KPI, Numpy, Pandas, Postman, Fiddler, Zappier FastReport, Wireshark, ACME, Gestion de projet, Analyse de données</td>
-                    </tr>
-                </table>
+            <div class="profession" style="--i:2;">
+               <i class='bx bx-palette'></i>
+               <h3>Web designer</h3>
             </div>
-            <div class="card bg-green">
-                <h2>Formation</h2>
-                <table class="table">
-                    <tr>
-                        <th>Année</th>
-                        <th>Formation</th>
-                        <th>Lieu</th>
-                    </tr>
-                    <tr>
-                        <td>2017-2019</td>
-                        <td>Bac +5 Informatique, Apprentissage et Fouille de Données</td>
-                        <td>Le Mans Université, France</td>
-                    </tr>
-                    <tr>
-                        <td>2013-2018</td>
-                        <td>Bac +5 Mathématiques Appliquées, 
-                            Informatique en Mathématique et Statistique</td>
-                        <td>Université Nationale O.Honchara de Dnipro, Ukraine</td>
-                    </tr>
-                    <tr>
-                        <td>Juin – Août 2017</td>
-                        <td>Cours de Français « DUFOS »</td>
-                        <td>Le Mans, France</td>
-                    </tr>
-                    <tr>
-                        <td>2014-2015</td>
-                        <td>Cours de programmation en C++ /C#</td>
-                        <td>It-School "Center of computer education", Dnipro, Ukraine</td>
-                    </tr>
-                    <tr>
-                        <td>2015-2017</td>
-                        <td>Cours d'Anglais</td>
-                        <td>American English School, Dnipro, Ukraine </td>
-                    </tr>
-                    <tr>
-                        <td>2011-2013</td>
-                        <td>Technologies de l'information</td>
-                        <td>Académie d'informatique « STEP », Dnipro, Ukraine</td>
-                    </tr>
-                </table>
+            <div class="profession" style="--i:3;">
+               <i class='bx bx-landscape'></i>
+               <h3>Travelling fan</h3>
             </div>
-            <div class="card bg-red">
-                <h2>Langues</h2>
-                <ol class="list">
-                    <li>Anglais </li>
-                    <li>Français </li>
-                    <li>Russe</li>
-                    <li>Ukrainien</li>
-                </ol>
-            </div>
-            <div class="card bg-yellow">
-                <h2>Centres d'intérêts</h2>
-                <ol class="hobby">
-                    <li>Sport : 
-                        <ul type="disc">
-                            <li>Pratiquante de patinage</li>
-                            <li>Roller</li>
-                            <li>Vélo</li>
-                            <li>Danse sportive et danse folklorique</li>
-                        </ul>
-                    </li>
-                    <li>Loisir : 
-                        <ul>
-                            <li>Voyages</li>
-                            <li>Cinéma</li>
-                            <li>Musique</li>
-                            <li>Nouvelle technologie</li>
-                            <li>VR Gaming</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-            <div class="card bg-green">
-                <h2>Personnelles</h2>
-                <p>Créatif, Sérieux, Innovant, Organisé</p>
-            </div>
-            <div class="contact">
-                <h2>Contactez moi</h2>
-                <form method="post" action="send.php">
-                    <div class="row">
-                        <div class="form-group">
-                            <label for="name">Votre nom et prénom: </label>
-                            <input type="text" id ="name" placeholder="Saisissez votre nom et prénom" name="name" required>
-                        </div>
-                        <div class="form-group">   
-                            <label for="email">Votre email: </label>
-                            <input type="text" id ="email" placeholder="Saisissez votre email" name="email" required>
-                        </div>
-                    </div>
-                    <div class="form-group">     
-                        <label for="text">Votre message: </label>
-                        <textarea id ="text" rows="2" cols="15" name="message" required></textarea>
-                    </div>    
-                    <input class="btn" type="submit" value="Contacter">
-                </form>
+            <div class="circle"></div>
+         </div>
+         <div class="overlay"></div>
+         <div class="home-img">
+            <img src="img/3.png" alt="photo">
+         </div>
+      </div>
+
+   </section>
+
+   <section class="about" id="about">
+      <div class="about-img">
+         <img src="img/4.png" alt="">
+      </div>
+      <div class="about-content">
+         <h2 class="heading">About <span>Me</span></h2>
+         <h3>Hi, I'm here to help you with your next project!</h3>
+         <p>Master degrees in Computer Science and in Applied Mathematics. </p>
+         <p>
+            3 years of professional experience in various projects: construction of business applications,
+            automation of structured and unstructured data processing, implementation of automated processes,
+            development of Rest API and API oData, support and maintenance of customers, development of a
+            plug-in for integration with the electronic signature system "Let's sign", development of API
+            for the trading system.
+         </p>
+         <p>Highly involved in the success of projects.</p>
+         <p>I plan to become a middle web developper in 2 years.</p>
+         <p>My motivation: a team work that gives the feeling of being useful to the building of the digital
+            society of tomorrow (dynamic team offering opportunities for evolution).
+         </p>
+         <!-- <a href="#" class="btn">Read more</a> -->
+      </div>
+   </section>
+
+   <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Portfolio</span></h2>
+      <div class="filter-cards">
+         <nav class="filter-cards__navigation">
+            <button data-filter="" class="filter-cards__item active" type="button">Show All</button>
+            <button data-filter="layout" class="filter-cards__item" type="button">Layout</button>
+            <button data-filter="js" class="filter-cards__item" type="button">JS</button>
+            <button data-filter="react" class="filter-cards__item" type="button">React</button>
+            <button data-filter="angular" class="filter-cards__item" type="button">Angular</button>
+         </nav>
+      </div>
+      <div class="portfolio-container">
+         <div class="portfolio-box" data-filter="react">
+            <img src="img/portfolio/Burger_builder.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Order Burgers</h4>
+               <p>A site that allows you to build your own burger and to order it.</p>
+               <a href="https://burger-builder-52fcc.web.app/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
             </div>
          </div>
-    </body>
-</html>
+         <div class="portfolio-box" data-filter="react">
+            <img src="img/portfolio/Meetups.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Meetups</h4>
+               <p>A travel agency portal with various tour offers, authorization and ordering capabilities.</p>
+               <a href="https://meetups-5468a.web.app/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="angular">
+            <img src="img/portfolio/Recipes_book.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Cook book</h4>
+               <p>A "Recipe book" site where you can list recipes and make shopping lists according to the
+                  recipe.</p>
+               <a href="https://ng-recipe-book-11965.web.app/auth" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="react">
+            <img src="img/portfolio/Food_order.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Online Food Store</h4>
+               <p>A "Food order" site to display the list of available dishes to order them, add them to a
+                  cart and place an order.</p>
+               <a href="https://meal-market.web.app" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="js">
+            <img src="img/portfolio/QR_Generator.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Online Barcode Generator</h4>
+               <p>The online code generator is a utility that allows you to create qr or bar codes based on
+                  your information, with the ability to download this code in order to use it on your
+                  products or paste it onto your website.</p>
+               <a href="https://mariiaprostiak.github.io/Barcode-Generator/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="js">
+            <img src="img/portfolio/Memory_game.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Memory game</h4>
+               <p>This is the online memory card game. Flip the cards and match the tiles together in
+                  pairs.</p>
+               <a href="https://mariiaprostiak.github.io/Memo-game/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="layout">
+            <img src="img/portfolio/Growfy_Landing_ Page.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Growfy - Webflow Ecommerce Website Template</h4>
+               <p>Responsive web page layout and filling with unique content, optimized for targeted
+                  requests.</p>
+               <a href="https://growfy-template.vercel.app/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="js">
+            <img src="img/portfolio/My_Trello.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Welcome to "My Trello"</h4>
+               <p>This project is a light clone version of the original Trello app.</p>
+               <a href="https://my-trello-ten.vercel.app/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="layout">
+            <img src="img/portfolio/Portfolio_Layout.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>SaulDesign - Simple Portfolio Website Template</h4>
+               <p>Responsive web page layout filling with unique content.</p>
+               <a href="https://mariiaprostiak.github.io/PortfolioDesignLayout/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="js">
+            <img src="img/portfolio/Small_Projects.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Set of Simple Small Widgets</h4>
+               <p>Responsive web page with simple widgets such as "Compass", "Weather forecast", "Clock"
+                  and "Drums kit".</p>
+               <a href="https://different-small-projects.vercel.app/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+         <div class="portfolio-box" data-filter="react">
+            <img src="img/portfolio/My_Shop.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Online clothing store</h4>
+               <p>Go to your personal account, choose the articles you like and place an order.You can
+                  browse your previous orders and manage your favorite items.</p>
+               <a href="https://online-shop-sigma-seven.vercel.app/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
 
+         <div class="portfolio-box" data-filter="react">
+            <img src="img/portfolio/Trivia_Quiz.PNG" alt="">
+            <div class="portfolio-layer">
+               <h4>Trivia - Quiz game</h4>
+               <p>Step up your quiz game by answering fun trivia questions! Love games with friends?
+                  Challenge friends and family in this trivia game!</p>
+               <a href="https://trivia-quiz-silk.vercel.app/" class="card-link" target="_blank"><i
+                     class='bx bx-link-external'></i></a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form>
+         <div class="input-box">
+            <input type="text" placeholder="Full Name" id="fullName">
+            <input type="email" placeholder="Email Address" id="email">
+            <input type="number" placeholder="Mobile Number" id="mobile">
+            <input type="text" placeholder="Email Subject" id="emailSubject">
+         </div>
+         <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+         <input type="submit" value="Send Message" class="btn" onclick="sendEmail()">
+      </form>
+   </section>
+
+   <footer class="footer">
+      <div class="footer-text">
+         <p>Copyright &copy; 2023 by Mariia Prostiak | All Rights Reserved</p>
+      </div>
+      <div class="footer-iconTop">
+         <a href="#home">
+            <i class='bx bx-up-arrow-alt'></i>
+         </a>
+      </div>
+   </footer>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="./js/script.js"></script>
+</body>
+
+</html>
